@@ -1,0 +1,50 @@
+.glitch{
+    position: absolute;
+    top: 5px;
+    font-family: 'Roboto Mono', monospace;
+    
+    /* text-shadow: 0.5em  0.05em 0 rgba(255,0,0,.75),
+     -0.035em  -0.06em 0.6em rgba(0,255,0,.75),
+     0.030em  0.04em 0 rgba(255,0,255,.75); */
+     /* animation: glitch 1000ms infinite; */
+     /* font-family: 'Roboto Mono', monospace; */
+     font-weight: 700;
+
+} 
+/* @keyframes glitch {
+    0%{
+         text-shadow: 0.09em  0.08em 0 rgba(255,0,0,.75),
+     -0.065em  -0.06em 0 rgba(0,255,0,.75),
+     0.070em  0.095em 0 rgba(255,0,255,.75);
+    }
+    14%{
+        text-shadow: 0.07em  0.05em 0 rgba(255,0,0,.75),
+     -0.055em  -0.07em 0 rgba(0,255,0,.75),
+     0.050em  0.075em 0 rgba(255,0,255,.75);
+    }
+    15%{
+        text-shadow: 0.08em  0.08em 0 rgba(255,0,0,.75),
+     0.025em  0.025em 0.042em rgba(0, 47, 255, 0.75),
+     -0.050em  -0.05em -0.04em rgba(255,0,255,.75);
+    }
+    49%{
+        text-shadow: 0.07em  0.08em 0 rgba(255,0,0,.75),
+     -0.025em  0.065em 0.032em rgba(153, 201, 22, 0.75),
+     -0.050em  -0.06em -0.07em rgba(255,0,255,.75);
+    }
+    50%{
+        text-shadow: 0.075em  0.09em 0 rgba(255,0,0,.75),
+     0.05em  0.025em -0.042em rgba(0,255,0,.75),
+     -0.030em  -0.05em -0.04em rgba(255,0,255,.75);
+    }
+    99%{
+        text-shadow: 0.065em  0.07em 0 rgba(255,0,0,.75),
+     0.05em  -0.025em 0.052em rgba(0,255,0,.75),
+     0.030em  -0.05em 0 rgba(255,0,255,.75);
+    }
+    100%{
+        text-shadow: -0.075em  0.09em 0 rgba(255,0,0,.75),
+     -0.045em  0.035em 0.04em rgba(0,255,0,.75),
+     -0.055em  -0.07em -0.07em rgba(255,0,255,.75);
+    }
+}  */
