@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script language="JavaScript" type="text/javascript"
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      function submitToAPI(e) {
+        e.preventDefault();
+        console.log(e);
+        
+        var URL = "https://bxscioykp6.execute-api.us-east-1.amazonaws.com/test";
+        var name = $("#name-input").val();
+        var email = $("#email-input").val(); // Missing parentheses here
+        var message = $("#message-input").val();
+        
+        var data = {
+          name: name,
+          email: email,
+          message: message
+        };
+        
+        $.ajax({
+          type: "POST",
+          url: URL,
+          dataType: "json", // Corrected typo ("data Type" to "dataType")
+          crossDomain: true, // Removed quotes around true
+          contentType: "application/json; charset=utf-8",
+          data: JSON.stringify(data),
+          success: function() {
+            // Clear form and show a success message
+            alert("Thanks for contacting us, we will get back to you soon");
+            document.getElementById("contact-form").reset(); // Corrected typo ("getElementByld" to"getElementById")
+            location.reload();
+          },
+          error: function() {
+            // Show an error message
+            alert("Unsuccessful");
+          }
+        });
+      }
+    </script> 
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>contact us</title>
+    <style>
+        .one{
+            width: 50em;
+            height: 5em;
+            margin: 2em;
+        }
+        .two{
+            width: 50em;
+            height: 10em;
+        }
+        
+    </style>  
+</head>
+
+<body>
+
+    <h1>Contact Us !!</h1>
+
+    <div class="first">
+
+        <form action=""
+            method="post">
+
+            <div class="section-title">
+
+
+            </div>
+
+            <div style="display: flex;align-content: center;align-items: center;flex-direction: column;">
+
+                <input type="text"
+                    id="name-input"
+                    placeholder="Enter full name"
+                    name="name"
+                    required=""
+                    class="one">
+
+                <br>
+
+                <input type="email"
+                    id="email-input"
+                    placeholder="Enter email address"
+                    name="email"
+                    required=""
+                    class="one">
+
+                <br>
+
+                <textarea
+                    id="message-input"
+                    rows="6"
+                    placeholder="Tell us about your message"
+                    name="message"
+                    required=""
+                    class="two"></textarea>
+
+                <br>
+
+            
+
+            <div>
+
+                <input type="submit"
+                    onClick= "submitToAPI(event)"
+                    name="send message"
+                    value="Send Message"
+                    class="one">
+
+            </div>
+        </div>
+        </form>
+
+    </div>
+
+</body>
+
+
+</html>
